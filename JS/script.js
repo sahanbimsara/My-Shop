@@ -1,17 +1,27 @@
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
 
-    //demo login username and password
     const validUsername = 'admin';
     const validPassword = '1234';
 
     if (username === validUsername && password === validPassword) {
-        alert('Login successful!');
-        window.location.href = 'order.html'; // Redirect to home page
+        Swal.fire({
+            icon: 'success',
+            title: 'Login successful!',
+            showConfirmButton: false,
+            timer: 1500
+        }).then(() => {
+            window.location.href = 'order.html'; // Redirect after SweetAlert closes
+        });
     } else {
-        alert('Invalid username or password');
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Invalid username or password',
+            confirmButtonText: 'Try Again'
+        });
     }
 });

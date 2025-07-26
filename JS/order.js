@@ -277,6 +277,10 @@
 
         // Also call after showing customer form (in case of dynamic fields)
         function showCustomerForm() {
+            Swal.fire({
+                title:'Add New Customer',
+                html:``
+            })
             // Remove any existing modal first
             const existingModal = document.querySelector('.customer-modal');
             if (existingModal) existingModal.remove();
