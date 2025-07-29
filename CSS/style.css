@@ -68,7 +68,7 @@ body {
 }
 
 .right-side {
-    background-image: url(/IMG/istockphoto-959839190-612x612.jpg);
+    background-image: url(/IMG/back01.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ body {
 
 /* Main left side: hero text style */
 .left-side {
-    background-image: url(../IMG/pngwing.com\ \(1\).png);
+    background-image: url(../IMG/festival_bg06.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
