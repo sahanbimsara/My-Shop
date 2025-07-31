@@ -9,18 +9,39 @@
     <Link rel="stylesheet" href="CSS/order-style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <img src="IMG/Black & Yellow.png" alt="Logo" height="40" class="me-2">
-                <span>MOS BURGER</span>
-            </div>
-            <div class="text-center">
-                <div id="current-date" class="text-muted small"></div>
-            </div>
-        </div>
-    </nav>
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="IMG/Black & Yellow.png" alt="Logo" height="50" />
+      <span class="ms-2 fw-bold">MOS BURGER</span>
+    </a>
+
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#top">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- Main Content -->
     <div class="main-container">

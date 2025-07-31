@@ -310,9 +310,18 @@
             `;
             document.body.appendChild(modal);
             attachCustomerAutoFill();
+
+
+
         }
+
+        
 
         // Initialize
         updateDateTime();
         setInterval(updateDateTime, 1000);
         displayMenuItems(menuItems);
+
+
+
+        
