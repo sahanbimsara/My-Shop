@@ -191,62 +191,6 @@
             document.querySelector('.customer-modal').remove();
         }
 
-        // function saveCustomer() {
-        //     const phone = document.getElementById('newCustomerPhone').value;
-        //     const name = document.getElementById('newCustomerName').value;
-        //     const email = document.getElementById('newCustomerEmail').value;
-
-        //     if (!phone || !name || !email) {
-        //         alert('Please fill in all fields');
-        //         return;
-        //     }
-
-        //     // Validate phone number format
-        //     if (!/^[0-9]{10}$/.test(phone)) {
-        //         alert('Please enter a valid 10-digit phone number');
-        //         return;
-        //     }
-
-        //     // Validate email format
-        //     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        //         alert('Please enter a valid email address');
-        //         return;
-        //     }
-
-        //     // Check if customer already exists
-        //     const existingCustomer = customers.findIndex(c => c.phone === phone);
-        //     if (existingCustomer !== -1) {
-        //         customers[existingCustomer] = { phone, name, email };
-        //         alert('Customer information updated successfully!');
-        //     } else {
-        //         customers.push({ phone, name, email });
-        //         alert('New customer added successfully!');
-        //     }            // Update the main form if this customer is currently selected
-        //     const mainPhoneInput = document.querySelector('input[placeholder="Enter Phone Number"]');
-        //     if (mainPhoneInput && mainPhoneInput.value === phone) {
-        //         document.querySelector('input[placeholder="Customer Name"]').value = name;
-        //         document.querySelector('input[placeholder="Customer Email"]').value = email;
-        //     }
-
-        //     closeCustomerModal();
-        // }
-
-        // Add customer info icon to the form
-        window.addEventListener('DOMContentLoaded', function() {
-            const phoneInput = document.querySelector('input[placeholder="Enter Phone Number"]');
-            const icon = document.createElement('i');
-            icon.className = 'fas fa-user-plus customer-info-icon';
-            icon.title = 'Add/Edit Customer Details';
-            icon.onclick = showCustomerForm;
-            phoneInput.parentElement.style.position = 'relative';
-            phoneInput.insertAdjacentElement('afterend', icon);
-
-            // Move the icon next to the input
-            icon.style.position = 'absolute';
-            icon.style.right = '10px';
-            icon.style.top = '50%';
-            icon.style.transform = 'translateY(-50%)';
-        });
 
 
         // Attach on DOMContentLoaded and after modal is shown
